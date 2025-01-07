@@ -20,11 +20,9 @@ btn_search.addEventListener('click' , ()=>{
 })
 
 try {
-  loadershow()
     fetch(upcoming_1).then((movie_data)=>{
         return movie_data.json();
     }).then((data)=>{
-      loaderhide()
         const items = data.results;
         items.forEach(element => {
             // console.log(element)
@@ -91,7 +89,7 @@ if(get_data !== null){
       
     }else{
         sessionStorage.removeItem('key_data');
-        search_card.innerHTML = `somthing wents wrong with api .Try to re-load  or Search any movie to fix it.`
+       // search_card.innerHTML = `somthing wents wrong with api .Try to re-load  or Search any movie to fix it.`
 }
 
 close_me_s.onclick = function(){

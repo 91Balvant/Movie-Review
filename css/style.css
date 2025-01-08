@@ -444,9 +444,6 @@ cursor: pointer;
     justify-content: space-between;
     padding: 0.5rem 1.2rem;
 }
-iframe h1{
-color:white;
-}
 .iframe_video{
     height: fit-content;
     width: fit-content;
